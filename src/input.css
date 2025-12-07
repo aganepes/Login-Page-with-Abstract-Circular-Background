@@ -1,56 +1,69 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-*{
-	box-sizing:border-box;
-	margin:0;
-	padding:0;
-}
-.body {
-  background-color: #27cbc2;
-  min-height: 100vh;
-  width: 100%;
-  overflow-x: hidden;
-  position: relative;
-  z-index: 1;
+
+@layer components {
+  .body {
+    background-color: #27cbc2;
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
+    z-index: 1;
+  }
+
+  .body::after {
+    content: "";
+    position: absolute;
+    top: -25vh;
+    left: calc(60% - 20vh);
+    width: 40vh;
+    height: 40vh;
+    border-radius: 50%;
+    background-color: #106c61;
+    z-index: -1;
+  }
+
+  .body::before {
+    content: "";
+    position: absolute;
+    top: -75vh;
+    left: calc(60% - 60vh);
+    width: 120vh;
+    height: 120vh;
+    border-radius: 50%;
+    background-color: #008b80;
+    z-index: -2;
+  }
+  .main {
+    position: relative;
+  }
+
+  .main::after {
+    content: "";
+    position: absolute;
+    top: -150vh;
+    left: calc(60% - 120vh);
+    width: 240vh;
+    height: 240vh;
+    border-radius: 50%;
+    background-color: #07aba2;
+    z-index: -3;
+  }
 }
 
-.body::after {
-  content: "";
-  position: absolute;
-  top: -25vh;
-  left: calc(60% - 20vh);
-  width: 40vh;
-  height: 40vh;
-  border-radius: 50%;
-  background-color: #106c61;
-  z-index: -1;
-}
-
-.body::before {
-  content: "";
-  position: absolute;
-  top: -75vh;
-  left: calc(60% - 60vh);
-  width: 120vh;
-  height: 120vh;
-  border-radius: 50%;
-  background-color: #008b80;
-  z-index: -2;
-}
-
-.main {
-  position: relative;
-}
-
-.main::after {
-  content: "";
-  position: absolute;
-  top: -150vh;
-  left: calc(60% - 120vh);
-  width: 240vh;
-  height: 240vh;
-  border-radius: 50%;
-  background-color: #07aba2;
-  z-index: -3;
+@layer utilities{
+	.nav-link{
+		@apply hover:text-blue-400 transition-all
+	}
+	.mini-circle{
+		/* @apply w-3 h-3 border-2 border-white rounded-full */
+		width: .75rem;
+		height: .75rem;
+		border:2px solid white;
+		border-radius: 50%;
+	}
+	.text-input{
+		@apply border-b-[1px] border-gray-800 ml-2 focus:outline-none flex-1
+	}
 }
