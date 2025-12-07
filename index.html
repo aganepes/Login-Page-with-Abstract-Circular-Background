@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="dist/output.css" rel="stylesheet" />
+</head>
+
+<body>
+	<div class="body">
+		<div class="main px-12 py-4">
+			<header class="flex flex-wrap text-white font-mono mt-4 sm:flex-nowrap sm:justify-between">
+				<p class="text-2xl uppercase font-sans">
+					<span class="font-semibold">company</span>
+					<span class="font-thin">name</span>
+				</p>
+				<div class="w-full flex justify-between gap-4 sm:px-0 sm:w-fit sm:justify-start sm:self-end">
+					<a href="#" class="hover:text-blue-400 transition-all">Home</a>
+					<a href="#" class="hover:text-blue-400 transition-all">Feantures</a>
+					<a href="#" class="hover:text-blue-400 transition-all">About</a>
+					<a href="#" class="hover:text-blue-400 transition-all">Service</a>
+					<a href="#" class="hover:text-blue-400 transition-all">Contact</a>
+					<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white" class="self-end">
+						<path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+					</svg>
+				</div>
+			</header>
+			<div class="mt-[100px] flex gap-2 flex-col sm:flex-row sm:justify-between">
+				<div class="min-w-[300px] sm:min-w-0 sm:basis-[500px]">
+					<div class="text-white">
+						<h1 class="text-6xl font-bold">Creative.</h1>
+						<h5 class="capitalize font-medium text-2xl">landing page template background</h5>
+						<p class="mt-8 mr-2 text-justify">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+							quas non dicta, ratione adipisci nesciunt sint. Libero sapiente, est eligendi obcaecati quis provident asperiores ipsam, fuga culpa
+							itaque doloribus praesentium voluptas deleniti voluptatum possimus
+							nostrum corrupti modi quam adipisci id eveniet doloremque saepe
+							aspernatur. 
+						</p>
+					</div>
+					<button class="text-white border-2 border-white rounded-2xl px-2 py-1 mt-[40px] uppercase text-xs font-bold hover:bg-white hover:text-[#27cbc2] hover:border-[#218580] transition-colors ">learn more</button>
+					<div class="flex gap-1 mt-3">
+						<div class="w-3 h-3 border-2 border-white rounded-full"></div>
+						<div class="w-3 h-3 border-2 border-white rounded-full"></div>
+						<div class="w-3 h-3 border-2 border-white rounded-full bg-white"></div>
+						<div class="w-3 h-3 border-2 border-white rounded-full"></div>
+						<div class="w-3 h-3 border-2 border-white rounded-full"></div>
+					</div>
+				</div>
+				<form action="" class="bg-white p-8 rounded-md self-center flex flex-col justify-center gap-5 w-[300px] sm:self-auto ">
+					<h3 class="text-center uppercase font-[500] relative after:h-[2px] after:w-[50px] after:bg-gray-600 after:absolute after:top-[100%] after:left-[calc(50%-25px)] my-8">your company</h3>
+					<label for="name" class="flex w-full justify-between items-center relative">
+						<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" class="mb-1">
+							<path
+								d="M185-80q-17 0-29.5-12.5T143-122v-105q0-90 56-159t144-88q-40 28-62 70.5T259-312v190q0 11 3 22t10 20h-87Zm147 0q-17 0-29.5-12.5T290-122v-190q0-70 49.5-119T459-480h189q70 0 119 49t49 119v64q0 70-49 119T648-80H332Zm148-484q-66 0-112-46t-46-112q0-66 46-112t112-46q66 0 112 46t46 112q0 66-46 112t-112 46Z" />
+						</svg>
+						<span class="absolute top-[-10px] left-[40px] text-[.5rem] text-gray-800 uppercase">enter username</span>
+						<input type="text" id="name" class="border-b-[1px] border-gray-800 ml-2 focus:outline-none flex-1" autocomplete="off"/>
+					</label>
+					<label for="password" class="flex w-full justify-between items-center relative">
+						<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" class="mb-1">
+							<path
+								d="M240-80q-33 0-56.5-23.5T160-160v-400q0-33 23.5-56.5T240-640h40v-80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720v80h40q33 0 56.5 23.5T800-560v400q0 33-23.5 56.5T720-80H240Zm0-80h480v-400H240v400Zm240-120q33 0 56.5-23.5T560-360q0-33-23.5-56.5T480-440q-33 0-56.5 23.5T400-360q0 33 23.5 56.5T480-280ZM360-640h240v-80q0-50-35-85t-85-35q-50 0-85 35t-35 85v80ZM240-160v-400 400Z" />
+						</svg>
+						<span class="absolute top-[-10px] left-[40px] text-[.5rem] text-gray-800 uppercase ">enter password</span>
+						<input type="text" id="password" class="border-b-[1px] border-gray-800 ml-2 focus:outline-none flex-1" autocomplete="off"/>
+					</label>
+					<button type="submit" class="w-full bg-[#27cbc2] py-1 text-xl text-white font-bold uppercase tracking-[2px]">login</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
