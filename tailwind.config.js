@@ -2,8 +2,7 @@ module.exports = {
   content: ["index.html"],
   darkMode: "class",
   theme: {
-    container: {
-    },
+    container: {},
     extend: {
       colors: {
         primary: "#27cbc2",
