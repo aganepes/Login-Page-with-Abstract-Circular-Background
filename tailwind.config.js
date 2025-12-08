@@ -7,7 +7,7 @@ module.exports = {
         primary: "#27cbc2",
         secondary: "#218580",
       },
-      screens: {},
+      screens: {}
     },
   },
   plugins: [],

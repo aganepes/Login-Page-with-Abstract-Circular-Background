@@ -611,12 +611,12 @@ video {
   position: relative;
 }
 
-.left-\[40px\] {
-  left: 40px;
+.left-\[2rem\] {
+  left: 2rem;
 }
 
-.top-\[-10px\] {
-  top: -10px;
+.top-0 {
+  top: 0px;
 }
 
 .my-8 {
@@ -654,6 +654,10 @@ video {
 
 .flex {
   display: flex;
+}
+
+.hidden {
+  display: none;
 }
 
 .w-\[300px\] {
@@ -856,6 +860,16 @@ video {
   --tw-shadow: var(--tw-shadow-colored);
 }
 
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-500 {
+  transition-duration: 500ms;
+}
+
 .nav-link {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -883,9 +897,38 @@ video {
   border-color: rgb(31 41 55 / var(--tw-border-opacity, 1));
 }
 
+.text-input::-moz-placeholder {
+  padding-left: 0.25rem;
+  font-size: .5rem;
+  text-transform: uppercase;
+}
+
+.text-input::placeholder {
+  padding-left: 0.25rem;
+  font-size: .5rem;
+  text-transform: uppercase;
+}
+
 .text-input:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+
+.text-input:focus::-moz-placeholder {
+  color: transparent;
+}
+
+.text-input:focus::placeholder {
+  color: transparent;
+}
+
+.text-input{
+  &:focus + span {
+    top: -.5rem;
+  }
+  &:focus + span {
+    display: block;
+  }
 }
 
 .after\:absolute::after {

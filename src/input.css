@@ -64,6 +64,9 @@
 		border-radius: 50%;
 	}
 	.text-input{
-		@apply border-b-[1px] border-gray-800 ml-2 focus:outline-none flex-1
+		@apply flex-1 border-b-[1px] border-gray-800 ml-2 focus:outline-none placeholder:text-[.5rem] placeholder:pl-1 placeholder:uppercase focus:placeholder:text-transparent; 
+		&:focus + span{
+			@apply block top-[-.5rem];
+		}
 	}
 }
